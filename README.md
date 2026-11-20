@@ -1,0 +1,1 @@
+36 Hyper-Realistic Portraits on Archival Canvas (40cm × 40cm each). A monumental monochromatic historiography honoring continental African pioneers and the global Black diaspora across Peace, Literature, Science, and Economics.
