@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The African &amp; Black Excellence Collection | Asamoah Twum Macbeth</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0a0a0a',
+                        charcoal: '#121215',
+                        graphite: '#1c1c21',
+                        lead: '#32323a',
+                        silver: '#d4d4dc',
+                        bronze: '#c5a059',
+                        bronzeLight: '#dfbe7d',
+                        parchment: '#f5f4ef'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', '"Space Grotesk"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #32323a;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c5a059;
+        }
+        .vignette {
+            box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.9);
+        }
+        .canvas-grain {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .macro-zoom-active {
+            transform: scale(2.15);
+            cursor: zoom-out;
+        }
+        .macro-zoom-ready {
+            cursor: zoom-in;
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-silver font-sans selection:bg-bronze selection:text-obsidian antialiased canvas-grain min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <!-- Top Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-40 bg-obsidian/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="#hero" class="font-serif italic text-lg sm:text-xl text-white tracking-wide">
+                The African &amp; Black Excellence Collection
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-7 text-xs tracking-wider uppercase font-medium">
+                <a href="#hero" class="hover:text-bronze transition text-silver/75">Overview</a>
+                <a href="#collection" class="hover:text-bronze transition text-silver/75">The 35 Works</a>
+                <a href="#manifesto" class="hover:text-bronze transition text-silver/75">Manifesto</a>
+                <a href="#specifications" class="hover:text-bronze transition text-silver/75">Archival Specs</a>
+                <a href="#artist" class="hover:text-bronze transition text-silver/75">Artist &amp; Studio</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <button onclick="openInquiryModal()" class="px-4 py-2.5 border border-bronze/60 bg-bronze/10 text-xs uppercase tracking-wider text-bronzeLight hover:bg-bronze hover:text-obsidian font-medium transition rounded">
+                    Curatorial Inquiry
+                </button>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden text-white focus:outline-none p-2.5 rounded hover:bg-white/5">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-charcoal border-b border-white/10 px-6 py-5 flex flex-col space-y-4 text-xs tracking-wider uppercase">
+            <a href="#hero" class="mobile-nav-link hover:text-bronze text-silver/80 py-1">Overview</a>
+            <a href="#collection" class="mobile-nav-link hover:text-bronze text-silver/80 py-1">The 35 Works</a>
+            <a href="#manifesto" class="mobile-nav-link hover:text-bronze text-silver/80 py-1">Manifesto</a>
+            <a href="#specifications" class="mobile-nav-link hover:text-bronze text-silver/80 py-1">Archival Specs</a>
+            <a href="#artist" class="mobile-nav-link hover:text-bronze text-silver/80 py-1">Artist &amp; Studio</a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-[88vh] flex items-center justify-center border-b border-white/10 px-6 py-20 overflow-hidden">
+            <!-- Architectural Grid Backdrop Representation -->
+            <div class="absolute inset-0 z-0 opacity-20 pointer-events-none vignette flex items-center justify-center">
+                <div class="w-[340px] sm:w-[560px] h-[240px] sm:h-[400px] border border-bronze/30 grid grid-cols-7 grid-rows-5 gap-2 p-3">
+                    <div class="bg-white/10 border border-white/10"></div><div class="bg-white/20 border border-white/10"></div><div class="bg-white/5 border border-white/10"></div><div class="bg-bronze/20 border border-bronze/30"></div><div class="bg-white/15 border border-white/10"></div><div class="bg-white/5 border border-white/10"></div><div class="bg-white/20 border border-white/10"></div>
+                    <div class="bg-white/15 border border-white/10"></div><div class="bg-white/5 border border-white/10"></div><div class="bg-white/25 border border-white/10"></div><div class="bg-white/10 border border-white/10"></div><div class="bg-bronze/20 border border-bronze/30"></div><div class="bg-white/15 border border-white/10"></div><div class="bg-white/5 border border-white/10"></div>
+                    <div class="bg-white/5 border border-white/10"></div><div class="bg-white/20 border border-white/10"></div><div class="bg-bronze/25 border border-bronze/40"></div><div class="bg-white/30 border border-white/20"></div><div class="bg-white/10 border border-white/10"></div><div class="bg-white/20 border border-white/10"></div><div class="bg-white/10 border border-white/10"></div>
+                    <div class="bg-white/20 border border-white/10"></div><div class="bg-white/10 border border-white/10"></div><div class="bg-white/15 border border-white/10"></div><div class="bg-white/20 border border-white/10"></div><div class="bg-white/5 border border-white/10"></div><div class="bg-bronze/20 border border-bronze/30"></div><div class="bg-white/15 border border-white/10"></div>
+                    <div class="bg-white/10 border border-white/10"></div><div class="bg-bronze/15 border border-bronze/25"></div><div class="bg-white/20 border border-white/10"></div><div class="bg-white/5 border border-white/10"></div><div class="bg-white/15 border border-white/10"></div><div class="bg-white/10 border border-white/10"></div><div class="bg-white/20 border border-white/10"></div>
+                </div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 bg-charcoal/90 border border-bronze/30 rounded-full text-[11px] uppercase tracking-[0.25em] text-bronzeLight">
+                    <span>Asamoah Twum Macbeth</span>
+                    <span class="text-white/30">•</span>
+                    <span>Accra, Ghana</span>
+                </div>
+
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-semibold text-white tracking-tight leading-[1.08] uppercase">
+                    The African &amp; Black Excellence Collection
+                </h1>
+
+                <p class="font-serif italic text-xl sm:text-2xl text-bronzeLight/90">
+                    Pan-African &amp; Diaspora Nobel Laureates in Archival Graphite &amp; Charcoal (1950–2021)
+                </p>
+
+                <p class="text-sm sm:text-base text-silver/75 font-light max-w-2xl mx-auto leading-relaxed">
+                    36 Hyper-Realistic Portraits on Archival Canvas (40cm &times; 40cm each). A monumental monochromatic historiography honoring continental African pioneers and the global Black diaspora across Peace, Literature, Science, and Economics.
+                </p>
+
+                <div class="pt-6 flex flex-wrap items-center justify-center gap-4 text-xs tracking-widest uppercase">
+                    <a href="#collection" class="px-7 py-4 bg-bronze text-obsidian font-semibold hover:bg-bronzeLight transition rounded shadow-lg shadow-bronze/10">
+                        Explore the 35 Works
+                    </a>
+                    <a href="#manifesto" class="px-7 py-4 border border-white/20 bg-charcoal/60 text-white hover:border-bronze hover:text-bronzeLight transition rounded">
+                        Read Curatorial Manifesto
+                    </a>
+                    <button onclick="openInquiryModal()" class="px-7 py-4 border border-bronze/40 text-bronzeLight hover:bg-bronze/15 transition rounded">
+                        Curatorial &amp; Institutional Inquiry
+                    </button>
+                </div>
+
+                <!-- Key Collection Metadata Bar -->
+                <div class="pt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto text-left border-t border-white/10 text-xs">
+                    <div>
+                        <span class="block text-bronze/80 uppercase text-[10px] tracking-widest mb-1">Laureates</span>
+                        <span class="text-white font-medium">36 Continental &amp; Diaspora</span>
+                    </div>
+                    <div>
+                        <span class="block text-bronze/80 uppercase text-[10px] tracking-widest mb-1">Canvas Format</span>
+                        <span class="text-white font-medium">40cm &times; 40cm Uniform</span>
+                    </div>
+                    <div>
+                        <span class="block text-bronze/80 uppercase text-[10px] tracking-widest mb-1">Medium</span>
+                        <span class="text-white font-medium">Archival Graphite &amp; Charcoal</span>
+                    </div>
+                    <div>
+                        <span class="block text-bronze/80 uppercase text-[10px] tracking-widest mb-1">Availability</span>
+                        <span class="text-white font-medium">Exhibitions, Residencies &amp; Collections</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalogue Raisonné / Interactive Museum Gallery -->
+        <section id="collection" class="max-w-7xl mx-auto px-4 sm:px-6 py-20">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 border-b border-white/10 pb-6 gap-6">
+                <div>
+                    <span class="text-[11px] uppercase tracking-[0.3em] text-bronze">Catalogue Raisonné (1950–2026)</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-white mt-1">African &amp; Black Nobel Laureates</h2>
+                    <p class="text-xs text-silver/60 mt-1">Filter all 36 works by discipline or Pan-African heritage, and select any canvas for macro texture inspection.</p>
+                </div>
+
+                <!-- Search & Dual Filter Controls -->
+                <div class="flex flex-col gap-3 items-stretch lg:items-end">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                        <!-- Search Input -->
+                        <div class="relative">
+                            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-silver/40 text-xs"></i>
+                            <input type="text" id="search-input" placeholder="Search name, country, or year..." class="w-full sm:w-64 bg-charcoal border border-white/15 rounded pl-9 pr-4 py-2.5 text-xs text-white placeholder-silver/40 focus:outline-none focus:border-bronze transition">
+                        </div>
+
+                        <!-- Heritage / Region Filter Buttons -->
+                        <div class="flex flex-wrap gap-1.5 text-xs uppercase tracking-wider" role="group" aria-label="Heritage Filter">
+                            <button class="heritage-btn active px-3.5 py-2.5 rounded bg-white/15 border border-bronze/60 text-white font-semibold transition" data-heritage="all">All 36</button>
+                            <button class="heritage-btn px-3.5 py-2.5 rounded border border-white/15 bg-charcoal text-silver/80 hover:border-bronze/60 hover:text-white transition" data-heritage="africa">Continental Africa (30)</button>
+                            <button class="heritage-btn px-3.5 py-2.5 rounded border border-white/15 bg-charcoal text-silver/80 hover:border-bronze/60 hover:text-white transition" data-heritage="diaspora">Black Diaspora (6)</button>
+                        </div>
+                    </div>
+
+                    <!-- Discipline Filter Buttons -->
+                    <div class="flex flex-wrap gap-1.5 text-xs uppercase tracking-wider" role="group" aria-label="Discipline Filter">
+                        <button class="filter-btn active px-3.5 py-2.5 rounded bg-bronze text-obsidian font-semibold transition" data-filter="all">All Disciplines (36)</button>
+                        <button class="filter-btn px-3.5 py-2.5 rounded border border-white/15 bg-charcoal text-silver/80 hover:border-bronze/60 hover:text-white transition" data-filter="peace">Peace (16)</button>
+                        <button class="filter-btn px-3.5 py-2.5 rounded border border-white/15 bg-charcoal text-silver/80 hover:border-bronze/60 hover:text-white transition" data-filter="literature">Literature (11)</button>
+                        <button class="filter-btn px-3.5 py-2.5 rounded border border-white/15 bg-charcoal text-silver/80 hover:border-bronze/60 hover:text-white transition" data-filter="science">Science (8)</button>
+                        <button class="filter-btn px-3.5 py-2.5 rounded border border-white/15 bg-charcoal text-silver/80 hover:border-bronze/60 hover:text-white transition" data-filter="econ">Econ (1)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Results Counter -->
+            <div class="mb-6 flex items-center justify-between text-xs text-silver/60">
+                <span id="results-count">Showing 36 of 36 works</span>
+                <span class="hidden sm:inline italic font-serif text-silver/50">Click any work to open Lightbox &amp; Macro Zoom</span>
+            </div>
+
+            <!-- Museum Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Cards rendered dynamically via JavaScript -->
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="empty-state" class="hidden py-20 text-center space-y-4 bg-charcoal/50 border border-white/10 rounded-lg">
+                <i class="fa-regular fa-compass text-3xl text-bronze/60"></i>
+                <h3 class="font-serif text-2xl text-white">No matching portraits found</h3>
+                <p class="text-xs text-silver/60 max-w-md mx-auto">Try clearing your search term or resetting the discipline and heritage filters to view the complete 36-work collection.</p>
+                <button id="reset-filters-btn" class="px-5 py-2.5 bg-bronze text-obsidian text-xs uppercase tracking-wider font-semibold rounded hover:bg-bronzeLight transition">
+                    Reset All Filters
+                </button>
+            </div>
+        </section>
+
+        <!-- Poetic Manifesto & Concept Section -->
+        <section id="manifesto" class="bg-charcoal border-y border-white/10 py-24 px-6 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto space-y-12 relative z-10">
+                <div class="text-center space-y-3">
+                    <span class="text-xs uppercase tracking-[0.3em] text-bronze">Curatorial Concept &amp; Philosophy</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-white italic">Visual Sovereignty &amp; Pan-African Memory</h2>
+                    <p class="text-xs uppercase tracking-widest text-silver/60">Bridging Continental Pioneers &amp; The Global Black Diaspora</p>
+                </div>
+
+                <div class="space-y-8 font-serif text-silver/90 text-lg sm:text-xl leading-relaxed italic border-l-2 border-bronze/50 pl-6 sm:pl-10">
+                    <div>
+                        <h3 class="font-sans not-italic text-xs uppercase tracking-[0.2em] text-bronzeLight font-semibold mb-3">III. The 40cm &times; 40cm Modular Monument</h3>
+                        <p class="font-light">
+                            "Each of the 36 portraits is unified within an identical 40cm &times; 40cm square canvas. Installed together as a monolithic 6 &times; 6 grid or dispersed across architectural space, the peacemaker stands beside the poet, the scientist, and the economist without hierarchy—inviting students, researchers, and future generations to stand face-to-face with the architects of our modern conscience."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs font-sans text-silver/60 uppercase tracking-widest border-t border-white/10">
+                    <span>The African &amp; Black Excellence Collection (36 Works)</span>
+                    <span class="italic font-serif text-bronzeLight text-sm">Asamoah Twum Macbeth — Accra, Ghana</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical & Archival Specifications -->
+        <section id="specifications" class="max-w-7xl mx-auto px-4 sm:px-6 py-20 border-b border-white/10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6">
+                    <span class="text-[11px] uppercase tracking-[0.3em] text-bronze">Material Standards</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-white">Technical &amp; Archival Specifications</h2>
+                    <p class="text-silver/75 leading-relaxed text-sm">
+                        Constructed to museum conservation standards, each piece in the 36-work cycle is engineered for multi-generational longevity, optical depth, and structural stability across diverse climatic environments.
+                    </p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-sans not-italic text-xs uppercase tracking-[0.2em] text-bronzeLight font-semibold mb-2">II. Slow-Look Carbon Historiography</h3>
+                        <p class="font-light">
+                            "In an era saturated by fleeting digital images, hyper-realism demands an act of deliberate stillness. There is a profound silence when raw carbon meets woven cotton. By stripping away the distraction of color, we confront the unadorned topography of wisdom—every crease of endurance and luminous gaze etched into archival permanence."
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-sans not-italic text-xs uppercase tracking-[0.2em] text-bronzeLight font-semibold mb-2">III. The 40cm &times; 40cm Modular Monument</h3>
+                        <p class="font-light">
+                            "Each of the 35 portraits is unified within an identical 40cm &times; 40cm square canvas. Installed together as a monolithic 5 &times; 7 grid or dispersed across architectural space, the peacemaker stands beside the poet, the scientist, and the economist without hierarchy—inviting students, researchers, and future generations to stand face-to-face with the architects of our modern conscience."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs font-sans text-silver/60 uppercase tracking-widest border-t border-white/10">
+                    <span>The African &amp; Black Excellence Collection (35 Completed Works)</span>
+                    <span class="italic font-serif text-bronzeLight text-sm">Asamoah Twum Macbeth — Accra, Ghana</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical & Archival Specifications -->
+        <section id="specifications" class="max-w-7xl mx-auto px-4 sm:px-6 py-20 border-b border-white/10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6">
+                    <span class="text-[11px] uppercase tracking-[0.3em] text-bronze">Material Standards</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-white">Technical &amp; Archival Specifications</h2>
+                    <p class="text-silver/75 leading-relaxed text-sm">
+                        Constructed to museum conservation standards, each piece in the 35-work cycle is engineered for multi-generational longevity, optical depth, and structural stability across diverse climatic environments.
+                    </p>
+                    <ul class="space-y-4 text-xs sm:text-sm text-silver/85">
+                        <li class="flex items-start space-x-3 bg-charcoal/60 p-4 rounded border border-white/5">
+                            <i class="fa-solid fa-layer-group text-bronze mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Substrate &amp; Support</strong>
+                                <span class="text-silver/70 text-xs">Heavyweight, acid-free triple-primed archival cotton canvas stretched over kiln-dried hardwood bars (40cm &times; 40cm uniform square format).</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3 bg-charcoal/60 p-4 rounded border border-white/5">
+                            <i class="fa-solid fa-pencil text-bronze mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Pigment &amp; Medium</strong>
+                                <span class="text-silver/70 text-xs">Graduated museum-grade graphite (4H through 9B) layered with compressed willow and carbon charcoal for velvet shadow density.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3 bg-charcoal/60 p-4 rounded border border-white/5">
+                            <i class="fa-solid fa-shield-halved text-bronze mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Conservation &amp; Fixative</strong>
+                                <span class="text-silver/70 text-xs">Sealed with multi-layer archival UV-resistant matte museum fixative to eliminate graphite glare and prevent surface oxidation.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-charcoal p-8 rounded-lg border border-white/10 space-y-6">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                        <h3 class="font-serif text-2xl text-white">Installation &amp; Provenance</h3>
+                        <span class="text-[10px] uppercase tracking-widest px-2.5 py-1 bg-bronze/15 text-bronzeLight border border-bronze/30 rounded">Exhibition Ready</span>
+                    </div>
+                    <div class="space-y-5 text-xs text-silver/75">
+                        <div class="border-b border-white/10 pb-4">
+                            <span class="text-white font-semibold block text-sm mb-1">Modular Spatial Configuration</span>
+                            <span class="text-silver/65 leading-relaxed block">
+                                Designed to be mounted as a unified 6 &times; 6 grid wall installation, arranged chronologically across continental and diaspora chapters, or integrated into site-specific architectural spaces such as SCCA Tamale or Red Clay Studio.
+                            </span>
+                        </div>
+                        <div class="border-b border-white/10 pb-4">
+                            <span class="text-white font-semibold block text-sm mb-1">Authentication &amp; Registry</span>
+                            <span class="text-silver/65 leading-relaxed block">
+                                Accompanied by signed Certificates of Authenticity, individual condition reports, and complete biographical catalogue notes for all 36 Laureates.
+                            </span>
+                        </div>
+                        <div class="border-b border-white/10 pb-4">
+                            <span class="text-white font-semibold block text-sm mb-1">Authentication &amp; Registry</span>
+                            <span class="text-silver/65 leading-relaxed block">
+                                Accompanied by signed Certificates of Authenticity, individual condition reports, and complete biographical catalogue notes for all 35 Laureates.
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-white font-semibold block text-sm mb-1">Institutional, Residency &amp; Biennial Loans</span>
+                            <span class="text-silver/65 leading-relaxed block">
+                                Available for museum exhibitions, cultural foundations, educational residencies, and permanent public or institutional acquisitions.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Biography & Studio Section -->
+        <section id="artist" class="max-w-7xl mx-auto px-4 sm:px-6 py-20">
+            <div class="bg-charcoal border border-white/10 rounded-lg p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="aspect-[4/5] bg-obsidian border border-bronze/30 rounded-lg overflow-hidden relative flex items-center justify-center">
+                        <!-- ARTIST STUDIO PORTRAIT / HANDS AT WORK: Replace ./images/artist-studio.jpg with your studio photo -->
+                        <img src="./images/artist-studio.jpg" alt="Asamoah Twum Macbeth — Studio in Accra, Ghana" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'750\' viewBox=\'0 0 600 750\'><rect width=\'600\' height=\'750\' fill=\'#0e0e11\'/><rect x=\'24\' y=\'24\' width=\'552\' height=\'702\' fill=\'none\' stroke=\'#c5a059\' stroke-opacity=\'0.35\' stroke-width=\'1.5\'/><text x=\'300\' y=\'320\' font-family=\'Georgia, serif\' font-size=\'44\' fill=\'#c5a059\' text-anchor=\'middle\' letter-spacing=\'6\'>ATM</text><text x=\'300\' y=\'375\' font-family=\'Georgia, serif\' font-size=\'20\' fill=\'#e4e4e7\' text-anchor=\'middle\'>Asamoah Twum Macbeth</text><text x=\'300\' y=\'408\' font-family=\'sans-serif\' font-size=\'12\' fill=\'#888894\' text-anchor=\'middle\' letter-spacing=\'3\'>STUDIO • ACCRA, GHANA</text><text x=\'300\' y=\'440\' font-family=\'sans-serif\' font-size=\'10\' fill=\'#63636e\' text-anchor=\'middle\' letter-spacing=\'2\'>ADD ./images/artist-studio.jpg</text></svg>');" class="w-full h-full object-cover filter grayscale contrast-115">
+                        <div class="absolute bottom-3 left-3 bg-obsidian/90 px-3 py-1.5 rounded border border-white/10 text-[10px] uppercase tracking-widest text-bronzeLight">
+                            Accra Studio • Ghana
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-[11px] uppercase tracking-[0.3em] text-bronze">Artist Biography &amp; Practice</span>
+                        <h2 class="font-serif text-3xl sm:text-5xl text-white mt-1">Asamoah Twum Macbeth</h2>
+                        <p class="text-xs uppercase tracking-widest text-silver/60 mt-2">Hyper-Realistic Portraiture &amp; Visual Historiography • Accra, Ghana</p>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-silver/80 leading-relaxed font-light">
+                        <p>
+                            Working from his studio in <strong class="text-white font-medium">Accra, Ghana</strong>, <strong class="text-white font-medium">Asamoah Twum Macbeth</strong> is a contemporary visual artist dedicated to hyper-realistic portraiture and historical documentation. Through disciplined mastery of archival graphite and charcoal on canvas, his practice transforms monochrome draftsmanship into a vessel for Pan-African and global Black memory.
+                        </p>
+                        <p>
+                            Viewing every human face as a biographical landscape, Macbeth approaches portraiture as an act of archival preservation. His landmark multi-year cycle, <em>The African &amp; Black Excellence Collection</em>, unites 36 African and Black Nobel Laureates across continental Africa and the diaspora—creating a permanent monument to shared intellectual and humanitarian sovereignty.
+                        </p>
+                    </div>
+
+                    <!-- CUSTOMIZABLE STUDIO CONTACT DETAILS: Edit your email and phone number below -->
+                    <div class="pt-4 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                        <div class="bg-obsidian/70 p-4 rounded border border-white/10">
+                            <span class="block text-[10px] uppercase tracking-widest text-bronze mb-1">Studio Location</span>
+                            <span class="text-white font-medium">Accra, Greater Accra Region, Ghana</span>
+                        </div>
+                        <div class="bg-obsidian/70 p-4 rounded border border-white/10">
+                            <span class="block text-[10px] uppercase tracking-widest text-bronze mb-1">Direct Studio Contact</span>
+                            <!-- REPLACE artist@asamoahtwummacbeth.com and +233 (0) 24 000 0000 with your real contact details -->
+                            <span id="studio-email-display" class="text-white font-medium block">artist@asamoahtwummacbeth.com</span>
+                            <span class="text-silver/60 block mt-0.5">+233 (0) 24 000 0000</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <button onclick="openInquiryModal()" class="px-6 py-3 bg-bronze text-obsidian text-xs font-semibold uppercase tracking-widest rounded hover:bg-bronzeLight transition">
+                            Request Exhibition Dossier / CV
+                        </button>
+                        <button onclick="copyStudioEmail()" class="px-6 py-3 border border-white/20 text-white text-xs uppercase tracking-widest rounded hover:border-bronze hover:text-bronzeLight transition">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy Studio Email
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-obsidian py-10 px-6 text-xs text-silver/50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                <span class="font-serif italic text-white text-base">The African &amp; Black Excellence Collection</span>
+                <span>— Asamoah Twum Macbeth (Accra, Ghana)</span>
+            </div>
+            <div>
+                &copy; <span id="year"></span> Asamoah Twum Macbeth Studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- HIGH-RESOLUTION LIGHTBOX MODAL WITH MACRO ZOOM & NEXT/PREV NAVIGATION -->
+    <!-- ===================================================================== -->
+    <div id="art-modal" role="dialog" aria-modal="true" class="fixed inset-0 z-50 hidden bg-obsidian/95 backdrop-blur-md p-4 sm:p-6 flex items-center justify-center overflow-y-auto">
+        <div class="relative max-w-5xl w-full bg-charcoal border border-white/15 rounded-lg p-5 sm:p-8 shadow-2xl my-auto">
+            <!-- Top Modal Controls -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+                <span id="modal-counter" class="text-xs uppercase tracking-[0.25em] text-bronze">Plate 01 of 36</span>
+                <div class="flex items-center space-x-2">
+                    <button id="prev-art-btn" title="Previous Portrait (Left Arrow)" class="px-3 py-2 bg-obsidian border border-white/15 rounded text-xs text-silver hover:text-white hover:border-bronze transition">
+                        <i class="fa-solid fa-chevron-left mr-1"></i> Prev
+                    </button>
+                    <button id="next-art-btn" title="Next Portrait (Right Arrow)" class="px-3 py-2 bg-obsidian border border-white/15 rounded text-xs text-silver hover:text-white hover:border-bronze transition">
+                        Next <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                    <button id="close-modal" aria-label="Close Lightbox" class="ml-2 w-9 h-9 flex items-center justify-center rounded bg-obsidian border border-white/15 text-silver hover:text-white hover:border-bronze transition">
+                        <i class="fa-solid fa-xmark text-base"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Artwork Display Stage with Interactive Macro Texture Zoom -->
+                <div class="lg:col-span-7 space-y-3">
+                    <div id="zoom-container" class="relative bg-obsidian border border-white/15 rounded aspect-square flex items-center justify-center overflow-hidden select-none">
+                        <img id="modal-img" src="" alt="" class="w-full h-full object-contain filter grayscale contrast-125 transition-transform duration-300 ease-out macro-zoom-ready">
+                        <div class="absolute bottom-3 left-3 bg-obsidian/85 px-2.5 py-1 rounded text-[10px] uppercase text-silver/80 tracking-widest border border-white/10 pointer-events-none">
+                            40cm &times; 40cm Archival Canvas
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <button id="toggle-zoom-btn" type="button" class="px-4 py-2 bg-obsidian border border-bronze/50 text-bronzeLight hover:bg-bronze hover:text-obsidian text-xs uppercase tracking-wider font-medium rounded transition">
+                            <i class="fa-solid fa-magnifying-glass-plus mr-1.5"></i> Toggle Macro Texture Zoom
+                        </button>
+                        <span class="text-[11px] text-silver/50 hidden sm:inline">Move cursor while zoomed to inspect graphite grain</span>
+                    </div>
+                </div>
+
+                <!-- Curatorial Details Column -->
+                <div class="lg:col-span-5 space-y-5">
+                    <div>
+                        <span id="modal-category" class="inline-block text-[10px] uppercase tracking-[0.25em] px-3 py-1 bg-bronze/15 border border-bronze/30 text-bronzeLight rounded"></span>
+                        <h3 id="modal-title" class="font-serif text-3xl sm:text-4xl text-white mt-3 leading-tight"></h3>
+                        <p id="modal-year-field" class="text-xs text-bronze uppercase tracking-widest mt-1"></p>
+                    </div>
+
+                    <div class="border-y border-white/10 py-4 space-y-2.5 text-xs text-silver/85">
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Plate:</span>
+                            <span id="modal-plate-meta" class="text-white font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Heritage:</span>
+                            <span id="modal-heritage-meta" class="text-white font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Country:</span>
+                            <span id="modal-country-meta" class="text-white font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Year Awarded:</span>
+                            <span id="modal-year-meta" class="text-white font-medium"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Artist:</span>
+                            <span class="text-white font-medium">Asamoah Twum Macbeth</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Medium:</span>
+                            <span id="modal-medium-meta" class="text-white">Archival Graphite &amp; Charcoal on Canvas</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Dimensions:</span>
+                            <span id="modal-dimensions-meta" class="text-white">40cm &times; 40cm</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-silver/50">Collection:</span>
+                            <span class="text-white">The African &amp; Black Excellence Collection</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="block text-[10px] uppercase tracking-widest text-silver/50 mb-1.5">Curatorial Note</span>
+                        <p id="modal-bio" class="text-sm text-silver/80 font-light leading-relaxed"></p>
+                    </div>
+
+                    <div class="pt-3 flex flex-wrap gap-3">
+                        <button id="modal-inquire-btn" type="button" class="w-full py-3.5 bg-bronze text-obsidian text-xs font-semibold uppercase tracking-widest rounded hover:bg-bronzeLight transition">
+                            Request Dossier / Inquire About Piece
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- CURATORIAL & INSTITUTIONAL INQUIRY MODAL                              -->
+    <!-- ===================================================================== -->
+    <div id="inquiry-modal" role="dialog" aria-modal="true" class="fixed inset-0 z-50 hidden bg-obsidian/95 backdrop-blur-md p-4 sm:p-6 flex items-center justify-center overflow-y-auto">
+        <div class="relative max-w-2xl w-full bg-charcoal border border-bronze/30 rounded-lg p-6 sm:p-8 shadow-2xl my-auto space-y-6">
+            <div class="flex items-start justify-between border-b border-white/10 pb-4">
+                <div>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-bronze">Institutional &amp; Curatorial Desk</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl text-white mt-1">Exhibition &amp; Collaboration Inquiry</h3>
+                </div>
+                <button onclick="closeInquiryModal()" aria-label="Close Inquiry Modal" class="w-9 h-9 flex items-center justify-center rounded bg-obsidian border border-white/15 text-silver hover:text-white hover:border-bronze transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <p class="text-xs sm:text-sm text-silver/75 leading-relaxed">
+                For museum exhibitions, biennials, artist residencies, or permanent institutional acquisitions of <strong class="text-white">The African &amp; Black Excellence Collection</strong>, compose your message below or connect directly with the Accra studio.
+            </p>
+
+            <!-- Direct Email & Copy Bar -->
+            <div class="bg-obsidian p-4 rounded border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="text-xs">
+                    <span class="text-silver/50 block text-[10px] uppercase tracking-widest">Studio Email</span>
+                    <span class="text-bronzeLight font-medium">artist@asamoahtwummacbeth.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button type="button" onclick="copyStudioEmail()" class="px-3.5 py-2 bg-charcoal border border-white/15 rounded text-xs text-white hover:border-bronze transition">
+                        <i class="fa-regular fa-copy mr-1"></i> Copy Email
+                    </button>
+                    <a href="mailto:artist@asamoahtwummacbeth.com?subject=Curatorial%20Inquiry%3A%20The%20African%20%26%20Black%20Excellence%20Collection" class="px-3.5 py-2 bg-bronze/20 border border-bronze/50 rounded text-xs text-bronzeLight hover:bg-bronze hover:text-obsidian transition">
+                        <i class="fa-regular fa-envelope mr-1"></i> Open Mail App
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Inquiry Form -->
+            <form id="inquiry-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] uppercase tracking-wider text-silver/70 mb-1.5">Your Name / Title</label>
+                        <input type="text" id="inq-name" required placeholder="e.g. Dr. Kwame Mensah, Curator" class="w-full bg-obsidian border border-white/15 rounded p-3 text-xs text-white focus:outline-none focus:border-bronze transition">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] uppercase tracking-wider text-silver/70 mb-1.5">Institution / Organization</label>
+                        <input type="text" id="inq-org" required placeholder="e.g. Museum, Biennial, Foundation" class="w-full bg-obsidian border border-white/15 rounded p-3 text-xs text-white focus:outline-none focus:border-bronze transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[11px] uppercase tracking-wider text-silver/70 mb-1.5">Proposal Focus</label>
+                    <select id="inq-type" class="w-full bg-obsidian border border-white/15 rounded p-3 text-xs text-white focus:outline-none focus:border-bronze transition">
+                        <option value="Exhibition / Residency Proposal (SCCA / Red Clay / Institution)">Exhibition / Residency Proposal</option>
+                        <option value="Institutional Acquisition (36-Piece Series)">Institutional Acquisition (36-Piece Series)</option>
+                        <option value="Press & Catalogue Request">Press &amp; Catalogue Request</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-[11px] uppercase tracking-wider text-silver/70 mb-1.5">Curatorial Message</label>
+                    <textarea id="inq-message" rows="4" required placeholder="Share details about your exhibition space, timeline, or curatorial vision..." class="w-full bg-obsidian border border-white/15 rounded p-3 text-xs text-white focus:outline-none focus:border-bronze transition"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-bronze text-obsidian font-semibold text-xs uppercase tracking-widest rounded hover:bg-bronzeLight transition">
+                    Submit Curatorial Inquiry
+                </button>
+            </form>
+
+            <!-- Instant Confirmation Banner -->
+            <div id="inquiry-confirmation" class="hidden bg-bronze/15 border border-bronze/50 rounded p-4 text-xs text-silver/90 space-y-2">
+                <div class="flex items-center space-x-2 text-bronzeLight font-semibold">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Inquiry Prepared &amp; Email Client Launched</span>
+                </div>
+                <p class="leading-relaxed text-silver/75">
+                    Your curatorial message has been formatted for <strong class="text-white">Asamoah Twum Macbeth Studio</strong>. If your default email app did not open automatically, use the <em>Copy Email</em> button above to send directly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Non-Intrusive Toast Notification -->
+    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden bg-charcoal border border-bronze text-white px-5 py-3.5 rounded shadow-2xl text-xs tracking-wide flex items-center space-x-3">
+        <i class="fa-solid fa-circle-check text-bronze"></i>
+        <span id="toast-message">Studio email copied to clipboard.</span>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- EMBEDDED DATA & INTERACTIVE GALLERY LOGIC                             -->
+    <!-- ===================================================================== -->
+    <script>
+        // Complete Chronological Dataset of the African & Black Nobel Laureates (1950–2026)
+        // Mapped cleanly to ./images/laureate-1.jpg through ./images/laureate-36.jpg
+        const artworks = [
+            {
+                id: 1,
+                title: "Ralph Bunche",
+                category: "peace",
+                heritage: "diaspora",
+                year: "1950",
+                country: "United States",
+                image: "./images/laureate-1.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. First Black person in history to receive a Nobel Prize, honored for mediating the 1949 armistice agreements in the Middle East."
+            },
+            {
+                id: 2,
+                title: "Max Theiler",
+                category: "science",
+                heritage: "africa",
+                year: "1951",
+                country: "South Africa",
+                image: "./images/laureate-2.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Physiology or Medicine. Honored for developing the life-saving vaccine against yellow fever."
+            },
+            {
+                id: 3,
+                title: "Albert Camus",
+                category: "literature",
+                heritage: "africa",
+                year: "1957",
+                country: "Algeria / France",
+                image: "./images/laureate-3.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Born in Algeria; recognized for illuminating the problems of the human conscience in our times."
+            },
+            {
+                id: 4,
+                title: "Albert Luthuli",
+                category: "peace",
+                heritage: "africa",
+                year: "1960",
+                country: "South Africa",
+                image: "./images/laureate-4.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. First continental Black African Nobel Laureate, honored for his non-violent struggle against apartheid."
+            },
+            {
+                id: 5,
+                title: "Martin Luther King Jr.",
+                category: "peace",
+                heritage: "diaspora",
+                year: "1964",
+                country: "United States",
+                image: "./images/laureate-5.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Architect of non-violent resistance in the American Civil Rights Movement, bridging global liberation struggles."
+            },
+            {
+                id: 6,
+                title: "Anwar El Sadat",
+                category: "peace",
+                heritage: "africa",
+                year: "1978",
+                country: "Egypt",
+                image: "./images/laureate-6.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. First North African Nobel Laureate, recognized for brokering the historic Camp David Accords."
+            },
+            {
+                id: 7,
+                title: "Allan M. Cormack",
+                category: "science",
+                heritage: "africa",
+                year: "1979",
+                country: "South Africa",
+                image: "./images/laureate-7.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Physiology or Medicine. Pioneered the mathematical foundations for computer-assisted tomography (CT scans)."
+            },
+            {
+                id: 8,
+                title: "W. Arthur Lewis",
+                category: "econ",
+                heritage: "diaspora",
+                year: "1979",
+                country: "Saint Lucia",
+                image: "./images/laureate-8.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Economic Sciences. First Black Laureate in Economics, recognized for pioneering research into economic development."
+            },
+            {
+                id: 9,
+                title: "Aaron Klug",
+                category: "science",
+                heritage: "africa",
+                year: "1982",
+                country: "South Africa",
+                image: "./images/laureate-9.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Chemistry. Developed crystallographic electron microscopy and elucidated nucleic acid-protein complexes."
+            },
+            {
+                id: 10,
+                title: "Desmond Tutu",
+                category: "peace",
+                heritage: "africa",
+                year: "1984",
+                country: "South Africa",
+                image: "./images/laureate-10.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Moral voice of the anti-apartheid movement and architect of reconciliation."
+            },
+            {
+                id: 11,
+                title: "Claude Simon",
+                category: "literature",
+                heritage: "africa",
+                year: "1985",
+                country: "Madagascar / France",
+                image: "./images/laureate-11.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Born in Antananarivo; celebrated for combining the poet's and the painter's creativeness."
+            },
+            {
+                id: 12,
+                title: "Wole Soyinka",
+                category: "literature",
+                heritage: "africa",
+                year: "1986",
+                country: "Nigeria",
+                image: "./images/laureate-12.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. First Sub-Saharan African Laureate in Literature, fashioning the drama of existence."
+            },
+            {
+                id: 13,
+                title: "Naguib Mahfouz",
+                category: "literature",
+                heritage: "africa",
+                year: "1988",
+                country: "Egypt",
+                image: "./images/laureate-13.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Master of modern Arabic fiction whose works rich in nuance apply to all mankind."
+            },
+            {
+                id: 14,
+                title: "Nadine Gordimer",
+                category: "literature",
+                heritage: "africa",
+                year: "1991",
+                country: "South Africa",
+                image: "./images/laureate-14.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Chronicled the moral and racial complexities of South Africa with magnificent epic writing."
+            },
+            {
+                id: 15,
+                title: "Derek Walcott",
+                category: "literature",
+                heritage: "diaspora",
+                year: "1992",
+                country: "Saint Lucia",
+                image: "./images/laureate-15.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Celebrated for a poetic oeuvre of great luminosity, sustained by a historical vision of Caribbean and African heritage."
+            },
+            {
+                id: 16,
+                title: "Nelson Mandela",
+                category: "peace",
+                heritage: "africa",
+                year: "1993",
+                country: "South Africa",
+                image: "./images/laureate-16.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Global icon of freedom recognized for dismantling apartheid and laying the foundations of a new democratic South Africa."
+            },
+            {
+                id: 17,
+                title: "F. W. de Klerk",
+                category: "peace",
+                heritage: "africa",
+                year: "1993",
+                country: "South Africa",
+                image: "./images/laureate-17.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Co-recipient for negotiating the peaceful transition to multiracial democracy in South Africa."
+            },
+            {
+                id: 18,
+                title: "Toni Morrison",
+                category: "literature",
+                heritage: "diaspora",
+                year: "1993",
+                country: "United States",
+                image: "./images/laureate-18.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. First Black woman to win the Nobel Prize in Literature, giving poetic force to essential aspects of Black reality."
+            },
+            {
+                id: 19,
+                title: "Claude Cohen-Tannoudji",
+                category: "science",
+                heritage: "africa",
+                year: "1997",
+                country: "Algeria / France",
+                image: "./images/laureate-19.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Physics. Born in Constantine; developed methods to cool and trap atoms with laser light."
+            },
+            {
+                id: 20,
+                title: "Ahmed Zewail",
+                category: "science",
+                heritage: "africa",
+                year: "1999",
+                country: "Egypt",
+                image: "./images/laureate-20.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Chemistry. Father of femtochemistry, capturing chemical reactions on femtosecond timescales."
+            },
+            {
+                id: 21,
+                title: "Kofi Annan",
+                category: "peace",
+                heritage: "africa",
+                year: "2001",
+                country: "Ghana",
+                image: "./images/laureate-21.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Former UN Secretary-General honored for revitalizing the United Nations and prioritizing human rights."
+            },
+            {
+                id: 22,
+                title: "Sydney Brenner",
+                category: "science",
+                heritage: "africa",
+                year: "2002",
+                country: "South Africa",
+                image: "./images/laureate-22.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Physiology or Medicine. Groundbreaking discoveries concerning genetic regulation of organ development."
+            },
+            {
+                id: 23,
+                title: "J. M. Coetzee",
+                category: "literature",
+                heritage: "africa",
+                year: "2003",
+                country: "South Africa",
+                image: "./images/laureate-23.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Celebrated for his incisive portrayal of the surprising involvement of the outsider."
+            },
+            {
+                id: 24,
+                title: "Wangari Maathai",
+                category: "peace",
+                heritage: "africa",
+                year: "2004",
+                country: "Kenya",
+                image: "./images/laureate-24.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. First African woman to win a Nobel Prize; founder of the Green Belt Movement."
+            },
+            {
+                id: 25,
+                title: "Mohamed ElBaradei",
+                category: "peace",
+                heritage: "africa",
+                year: "2005",
+                country: "Egypt",
+                image: "./images/laureate-25.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Honored for efforts to prevent nuclear energy from being used for military purposes."
+            },
+            {
+                id: 26,
+                title: "Doris Lessing",
+                category: "literature",
+                heritage: "africa",
+                year: "2007",
+                country: "Zimbabwe",
+                image: "./images/laureate-26.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Epicist of the female experience who scrutinized a divided civilization with skepticism and visionary power."
+            },
+            {
+                id: 27,
+                title: "J. M. G. Le Clézio",
+                category: "literature",
+                heritage: "africa",
+                year: "2008",
+                country: "Mauritius / France",
+                image: "./images/laureate-27.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Author of new departures, poetic adventure, and sensual ecstasy, explorer of humanity beyond ruling civilization."
+            },
+            {
+                id: 28,
+                title: "Barack Obama",
+                category: "peace",
+                heritage: "diaspora",
+                year: "2009",
+                country: "United States / Kenya",
+                image: "./images/laureate-28.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. First Black President of the United States, honored for extraordinary efforts to strengthen international diplomacy and cooperation."
+            },
+            {
+                id: 29,
+                title: "Ellen Johnson Sirleaf",
+                category: "peace",
+                heritage: "africa",
+                year: "2011",
+                country: "Liberia",
+                image: "./images/laureate-29.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Africa's first democratically elected female head of state, honored for non-violent struggle for women's safety."
+            },
+            {
+                id: 30,
+                title: "Leymah Gbowee",
+                category: "peace",
+                heritage: "africa",
+                year: "2011",
+                country: "Liberia",
+                image: "./images/laureate-30.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Mobilized women across religious and ethnic lines to end Liberia's civil war."
+            },
+            {
+                id: 31,
+                title: "Serge Haroche",
+                category: "science",
+                heritage: "africa",
+                year: "2012",
+                country: "Morocco / France",
+                image: "./images/laureate-31.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Physics. Born in Casablanca; pioneered experimental methods enabling measurement of individual quantum systems."
+            },
+            {
+                id: 32,
+                title: "Michael Levitt",
+                category: "science",
+                heritage: "africa",
+                year: "2013",
+                country: "South Africa",
+                image: "./images/laureate-32.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Chemistry. Developed multiscale models for complex chemical systems."
+            },
+            {
+                id: 33,
+                title: "Denis Mukwege",
+                category: "peace",
+                heritage: "africa",
+                year: "2018",
+                country: "Democratic Republic of the Congo",
+                image: "./images/laureate-33.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Founder of Panzi Hospital; honored for his lifelong battle to end sexual violence as a weapon of war."
+            },
+            {
+                id: 34,
+                title: "Abiy Ahmed",
+                category: "peace",
+                heritage: "africa",
+                year: "2019",
+                country: "Ethiopia",
+                image: "./images/laureate-34.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. Recognized for his decisive initiative to resolve the border conflict with neighboring Eritrea."
+            },
+            {
+                id: 35,
+                title: "Abdulrazak Gurnah",
+                category: "literature",
+                heritage: "africa",
+                year: "2021",
+                country: "Tanzania",
+                image: "./images/laureate-35.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Literature. Born in Zanzibar; honored for his uncompromising penetration of the effects of colonialism and the fate of the refugee."
+            },
+            {
+                id: 36,
+                title: "Navi Pillay",
+                category: "peace",
+                heritage: "africa",
+                year: "2026",
+                country: "South Africa",
+                image: "./images/laureate-36.jpg",
+                medium: "Archival Graphite & Charcoal on Canvas",
+                dimensions: "40cm x 40cm",
+                desc: "Peace. South African jurist and former UN High Commissioner for Human Rights honored for her efforts to promote peace and international law."
+            }
+        ];
+
+        // State Variables
+        let activeFilter = 'all';
+        let activeHeritage = 'all';
+        let searchQuery = '';
+        let currentFilteredList = [...artworks];
+        let currentModalIndex = 0;
+        let isZoomed = false;
+
+        // DOM Elements
+        const grid = document.getElementById('gallery-grid');
+        const emptyState = document.getElementById('empty-state');
+        const resultsCount = document.getElementById('results-count');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const heritageBtns = document.querySelectorAll('.heritage-btn');
+        const searchInput = document.getElementById('search-input');
+        const resetFiltersBtn = document.getElementById('reset-filters-btn');
+
+        // Lightbox Elements
+        const artModal = document.getElementById('art-modal');
+        const modalImg = document.getElementById('modal-img');
+        const zoomContainer = document.getElementById('zoom-container');
+        const toggleZoomBtn = document.getElementById('toggle-zoom-btn');
+        const closeModalBtn = document.getElementById('close-modal');
+        const prevArtBtn = document.getElementById('prev-art-btn');
+        const nextArtBtn = document.getElementById('next-art-btn');
+
+        // Generate a refined SVG Museum Canvas Fallback Data URI when local image isn't uploaded yet
+        function buildFallbackSvg(art) {
+            const cleanName = art.title.split('(')[0].trim();
+            const words = cleanName.split(' ').filter(Boolean);
+            const initials = words.length >= 2
+                ? (words[0][0] + words[words.length - 1][0]).toUpperCase()
+                : cleanName.slice(0, 2).toUpperCase();
+
+            const safeTitle = cleanName.length > 26 ? cleanName.slice(0, 24) + '…' : cleanName;
+            const plateNum = String(art.id).padStart(2, '0');
+            const categoryLabel = art.category;
+
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                <defs>
+                    <radialGradient id="g" cx="50%" cy="45%" r="65%">
+                        <stop offset="0%" stop-color="#25252b"/>
+                        <stop offset="100%" stop-color="#0e0e11"/>
+                    </radialGradient>
+                </defs>
+                <rect width="600" height="600" fill="url(#g)"/>
+                <rect x="24" y="24" width="552" height="552" fill="none" stroke="#c5a059" stroke-opacity="0.35" stroke-width="1.2"/>
+                <rect x="34" y="34" width="532" height="532" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+                <text x="300" y="95" font-family="sans-serif" font-size="11" fill="#c5a059" text-anchor="middle" letter-spacing="4">PLATE ${plateNum} • ${categoryLabel}</text>
+                <circle cx="300" cy="260" r="68" fill="none" stroke="#c5a059" stroke-opacity="0.45" stroke-width="1.2"/>
+                <text x="300" y="276" font-family="Georgia, serif" font-size="44" fill="#e4e4e7" text-anchor="middle" letter-spacing="3">${initials}</text>
+                <text x="300" y="385" font-family="Georgia, serif" font-size="23" fill="#ffffff" text-anchor="middle">${safeTitle}</text>
+                <text x="300" y="416" font-family="sans-serif" font-size="12" fill="#a1a1aa" text-anchor="middle" letter-spacing="2">${art.country} • ${art.year}</text>
+                <line x1="210" y1="455" x2="390" y2="455" stroke="#c5a059" stroke-opacity="0.35" stroke-width="1"/>
+                <text x="300" y="485" font-family="sans-serif" font-size="11" fill="#888894" text-anchor="middle" letter-spacing="3">40CM × 40CM ARCHIVAL CANVAS</text>
+                <text x="300" y="510" font-family="sans-serif" font-size="10" fill="#63636e" text-anchor="middle" letter-spacing="2">GRAPHITE &amp; CHARCOAL</text>
+            </svg>`;
+
+            return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+        }
+
+        // Render Filtered & Searched Gallery Cards using the uniform Plate #01 structure
+        function renderGallery() {
+            grid.innerHTML = '';
+
+            currentFilteredList = artworks.filter(art => {
+                const matchesCategory = activeFilter === 'all' || art.category.toLowerCase() === activeFilter.toLowerCase();
+                const matchesHeritage = activeHeritage === 'all' || art.heritage.toLowerCase() === activeHeritage.toLowerCase();
+                const q = searchQuery.trim().toLowerCase();
+                const matchesSearch = !q ||
+                    art.title.toLowerCase().includes(q) ||
+                    art.country.toLowerCase().includes(q) ||
+                    art.year.includes(q);
+                return matchesCategory && matchesHeritage && matchesSearch;
+            });
+
+            resultsCount.textContent = `Showing ${currentFilteredList.length} of ${artworks.length} works`;
+
+            if (currentFilteredList.length === 0) {
+                grid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            grid.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+
+            currentFilteredList.forEach((art, idx) => {
+                const card = document.createElement('article');
+                card.className = "group relative bg-charcoal border border-white/10 rounded overflow-hidden cursor-pointer hover:border-bronze/70 hover:-translate-y-1 transition duration-300 flex flex-col justify-between";
+                card.onclick = () => openLightbox(idx);
+
+                const fallbackSrc = buildFallbackSvg(art);
+                const plateLabel = String(art.id).padStart(2, '0');
+                const badgeText = art.category;
+                const heritageTag = art.heritage === 'diaspora' ? 'Diaspora' : 'Africa';
+                const dimsLabel = art.dimensions || '40cm x 40cm';
+
+                card.innerHTML = `
+                    <div class="aspect-square bg-obsidian overflow-hidden relative">
+                        <img
+                            src="${art.image}"
+                            alt="${art.title} (${art.year}) — Graphite & Charcoal Portrait by Asamoah Twum Macbeth"
+                            loading="lazy"
+                            onerror="this.onerror=null; this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition duration-500"
+                        >
+                        <div class="absolute top-2.5 left-2.5 bg-obsidian/90 text-[9px] px-2 py-0.5 rounded uppercase tracking-wider text-bronzeLight border border-white/10">
+                            ${badgeText}
+                        </div>
+                        <div class="absolute top-2.5 right-2.5 bg-obsidian/80 px-2 py-0.5 rounded text-[9px] font-mono text-silver/70 border border-white/10">
+                            #${plateLabel}
+                        </div>
+                    </div>
+                    <div class="p-4 space-y-1.5 bg-charcoal flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg text-white leading-snug group-hover:text-bronzeLight transition">${art.title}</h3>
+                            <p class="text-[11px] text-silver/60 mt-0.5">${art.country} • ${art.year}</p>
+                        </div>
+                        <div class="pt-2 border-t border-white/5 flex items-center justify-between text-[10px] uppercase tracking-widest text-silver/45">
+                            <span>${heritageTag} • ${dimsLabel}</span>
+                            <span class="group-hover:text-bronze transition">Inspect <i class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Open Lightbox at specific filtered index
+        function openLightbox(index) {
+            currentModalIndex = index;
+            resetZoom();
+            updateLightboxContent();
+            artModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateLightboxContent() {
+            const art = currentFilteredList[currentModalIndex];
+            if (!art) return;
+
+            const fallbackSrc = buildFallbackSvg(art);
+            modalImg.onerror = function() {
+                this.onerror = null;
+                this.src = fallbackSrc;
+            };
+            modalImg.src = art.image;
+            modalImg.alt = `${art.title} (${art.year})`;
+
+            const catTitle = art.category;
+            const heritageLabel = art.heritage === 'diaspora' ? 'Black Diaspora' : 'Continental Africa';
+            const plateFormatted = `#${String(art.id).padStart(2, '0')}`;
+
+            document.getElementById('modal-counter').textContent = `Plate ${plateFormatted.slice(1)} of ${artworks.length} • ${heritageLabel}`;
+            document.getElementById('modal-category').textContent = `Nobel Prize — ${catTitle}`;
+            document.getElementById('modal-title').textContent = art.title;
+            document.getElementById('modal-year-field').textContent = `${art.country} • ${art.year}`;
+            document.getElementById('modal-plate-meta').textContent = plateFormatted;
+            document.getElementById('modal-heritage-meta').textContent = heritageLabel;
+            document.getElementById('modal-country-meta').textContent = art.country;
+            document.getElementById('modal-year-meta').textContent = art.year;
+            document.getElementById('modal-medium-meta').textContent = art.medium || 'Archival Graphite & Charcoal on Canvas';
+            document.getElementById('modal-dimensions-meta').textContent = art.dimensions || '40cm x 40cm';
+            document.getElementById('modal-bio').textContent = art.desc;
+        }
+
+        function closeLightbox() {
+            artModal.classList.add('hidden');
+            resetZoom();
+            document.body.style.overflow = 'auto';
+        }
+
+        // Macro Texture Zoom Controls
+        function toggleZoom() {
+            isZoomed = !isZoomed;
+            if (isZoomed) {
+                modalImg.classList.add('macro-zoom-active');
+                modalImg.classList.remove('macro-zoom-ready');
+                toggleZoomBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass-minus mr-1.5"></i> Reset Zoom (100%)';
+            } else {
+                resetZoom();
+            }
+        }
+
+        function resetZoom() {
+            isZoomed = false;
+            modalImg.classList.remove('macro-zoom-active');
+            modalImg.classList.add('macro-zoom-ready');
+            modalImg.style.transformOrigin = 'center center';
+            toggleZoomBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass-plus mr-1.5"></i> Toggle Macro Texture Zoom';
+        }
+
+        zoomContainer.addEventListener('mousemove', (e) => {
+            if (!isZoomed) return;
+            const rect = zoomContainer.getBoundingClientRect();
+            const xPercent = ((e.clientX - rect.left) / rect.width) * 100;
+            const yPercent = ((e.clientY - rect.top) / rect.height) * 100;
+            modalImg.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+        });
+
+        zoomContainer.addEventListener('click', toggleZoom);
+        toggleZoomBtn.addEventListener('click', toggleZoom);
+
+        // Next / Prev Navigation in Lightbox
+        prevArtBtn.addEventListener('click', () => {
+            resetZoom();
+            currentModalIndex = (currentModalIndex - 1 + currentFilteredList.length) % currentFilteredList.length;
+            updateLightboxContent();
+        });
+
+        nextArtBtn.addEventListener('click', () => {
+            resetZoom();
+            currentModalIndex = (currentModalIndex + 1) % currentFilteredList.length;
+            updateLightboxContent();
+        });
+
+        closeModalBtn.addEventListener('click', closeLightbox);
+        artModal.addEventListener('click', (e) => {
+            if (e.target === artModal) closeLightbox();
+        });
+
+        // Inquire directly from Lightbox
+        document.getElementById('modal-inquire-btn').addEventListener('click', () => {
+            const art = currentFilteredList[currentModalIndex];
+            closeLightbox();
+            openInquiryModal(art ? `Inquiry regarding Plate #${String(art.id).padStart(2, '0')}: ${art.title} (${art.year}) and The African & Black Excellence Collection.` : '');
+        });
+
+        // Keyboard Shortcuts for Lightbox (Escape, Left/Right Arrows)
+        document.addEventListener('keydown', (e) => {
+            if (!artModal.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevArtBtn.click();
+                if (e.key === 'ArrowRight') nextArtBtn.click();
+            } else if (!document.getElementById('inquiry-modal').classList.contains('hidden')) {
+                if (e.key === 'Escape') closeInquiryModal();
+            }
+        });
+
+        // Discipline Filter Event Listeners
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-bronze', 'text-obsidian', 'font-semibold', 'active');
+                    b.classList.add('border', 'border-white/15', 'bg-charcoal', 'text-silver/80');
+                });
+                btn.classList.add('bg-bronze', 'text-obsidian', 'font-semibold', 'active');
+                btn.classList.remove('border', 'border-white/15', 'bg-charcoal', 'text-silver/80');
+                activeFilter = btn.dataset.filter;
+                renderGallery();
+            });
+        });
+
+        // Heritage / Region Filter Event Listeners
+        heritageBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                heritageBtns.forEach(b => {
+                    b.classList.remove('bg-white/15', 'border-bronze/60', 'text-white', 'font-semibold', 'active');
+                    b.classList.add('border-white/15', 'bg-charcoal', 'text-silver/80');
+                });
+                btn.classList.add('bg-white/15', 'border-bronze/60', 'text-white', 'font-semibold', 'active');
+                btn.classList.remove('border-white/15', 'bg-charcoal', 'text-silver/80');
+                activeHeritage = btn.dataset.heritage;
+                renderGallery();
+            });
+        });
+
+        // Search Input Event Listener
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderGallery();
+        });
+
+        resetFiltersBtn.addEventListener('click', () => {
+            searchQuery = '';
+            searchInput.value = '';
+            activeFilter = 'all';
+            activeHeritage = 'all';
+
+            filterBtns.forEach(b => {
+                b.classList.remove('bg-bronze', 'text-obsidian', 'font-semibold', 'active');
+                b.classList.add('border', 'border-white/15', 'bg-charcoal', 'text-silver/80');
+                if (b.dataset.filter === 'all') {
+                    b.classList.add('bg-bronze', 'text-obsidian', 'font-semibold', 'active');
+                    b.classList.remove('border', 'border-white/15', 'bg-charcoal', 'text-silver/80');
+                }
+            });
+
+            heritageBtns.forEach(b => {
+                b.classList.remove('bg-white/15', 'border-bronze/60', 'text-white', 'font-semibold', 'active');
+                b.classList.add('border-white/15', 'bg-charcoal', 'text-silver/80');
+                if (b.dataset.heritage === 'all') {
+                    b.classList.add('bg-white/15', 'border-bronze/60', 'text-white', 'font-semibold', 'active');
+                    b.classList.remove('border-white/15', 'bg-charcoal', 'text-silver/80');
+                }
+            });
+
+            renderGallery();
+        });
+
+        // Curatorial Inquiry Modal Functions
+        const inquiryModal = document.getElementById('inquiry-modal');
+        function openInquiryModal(prefillMessage = '') {
+            document.getElementById('inquiry-confirmation').classList.add('hidden');
+            if (prefillMessage) {
+                document.getElementById('inq-message').value = prefillMessage;
+            }
+            inquiryModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeInquiryModal() {
+            inquiryModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        inquiryModal.addEventListener('click', (e) => {
+            if (e.target === inquiryModal) closeInquiryModal();
+        });
+
+        // Launch pre-filled mailto link and show confirmation banner when inquiry form is submitted
+        document.getElementById('inquiry-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('inq-name').value.trim();
+            const org = document.getElementById('inq-org').value.trim();
+            const type = document.getElementById('inq-type').value;
+            const msg = document.getElementById('inq-message').value.trim();
+
+            const studioEmail = document.getElementById('studio-email-display').textContent.trim();
+            const subject = encodeURIComponent(`[${type}] The African & Black Excellence Collection — ${org}`);
+            const body = encodeURIComponent(`Dear Asamoah Twum Macbeth,\n\nName / Title: ${name}\nInstitution: ${org}\nInquiry Focus: ${type}\n\nMessage:\n${msg}\n\nBest regards,\n${name}`);
+
+            document.getElementById('inquiry-confirmation').classList.remove('hidden');
+            window.location.href = `mailto:${studioEmail}?subject=${subject}&body=${body}`;
+            showToast('Inquiry prepared — launching your email client...');
+        });
+
+        // Clipboard Copy Helper (using execCommand for iFrame compatibility)
+        function copyStudioEmail() {
+            const email = document.getElementById('studio-email-display').textContent.trim();
+            const tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showToast(`Copied ${email} to clipboard.`);
+            } catch (err) {
+                showToast(`Studio email: ${email}`);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast-notification');
+            document.getElementById('toast-message').textContent = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Set Current Year & Initial Render
+        document.getElementById('year').textContent = new Date().getFullYear();
+        window.onload = () => {
+            renderGallery();
+        };
+    </script>
+</body>
+</html>
